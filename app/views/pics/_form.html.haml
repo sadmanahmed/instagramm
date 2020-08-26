@@ -10,6 +10,10 @@
 
 
   .form-group
+    = image_tag f.object.image_url if f.object.cached_image_data
+    = f.hidden_field :image,value: f.object.cached_image_data
+    = f.input :image, input_html: { class: 'form-control' }
+  .form-group
     = f.input :title, input_html: { class: 'form-control' }
   .form-group
     = f.input :description, input_html: { class: 'form-control' }

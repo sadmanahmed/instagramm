@@ -18,6 +18,8 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
+gem "shrine", "~> 3.2"
+gem "image_processing", "~> 1.0"
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
