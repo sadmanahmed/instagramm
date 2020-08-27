@@ -20,7 +20,7 @@ gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem "shrine", "~> 3.2"
 gem "image_processing", "~> 1.0"
-
+gem 'masonry-rails', '~> 0.2.4'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
