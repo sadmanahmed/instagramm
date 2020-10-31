@@ -12,6 +12,7 @@ group :development, :test do
     gem 'dotenv-rails'
 end
 
+gem 'pry'
 gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
