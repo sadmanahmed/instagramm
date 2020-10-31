@@ -1,5 +1,7 @@
 class PicsController < ApplicationController
-before_action :find_pic, only: [:show,:edit,:update,:destroy]
+before_action :find_pic, only: [:show,:edit,:update,:destroy,:upvote]
+before_action :authenticate_user!,except: [:index,:show]
+#before_action :correct_user, only: %i[edit update]
 
 def index
   @pics = Pic.all.order("created_at DESC")
@@ -38,6 +40,11 @@ def update
   end
 end
 
+def upvote
+    @pic.upvote_by current_user
+    redirect_to @pic
+  end
+
 
 
 
@@ -50,4 +57,8 @@ private
   def find_pic
     @pic = Pic.find(params[:id])
   end
+  # def correct_user
+  #   @user = User.find(params[:id])
+  #   redirect_to(root_url) unless current_user?(@user)
+  # end
 end
