@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-
-- @pics.each do |pic|
-  = link_to (image_tag pic.image.url), pic
-  %h2= link_to pic.title, pic
-=======
 .col-md-6.col-md-offset-3
   #pics.transitions-enabled
     - @pics.each do |pic|
       .box.panel.panel-default
         = link_to (image_tag pic.image.url), pic
         %h2= link_to pic.title, pic
-
->>>>>>> 8e8e3bbf6f560f433da5fb00cc5d811ffdf444dc
 
